@@ -9,20 +9,37 @@ body {
 }
 
 h1 {
-	padding-bottom: 1em;
+	padding: .5em 0;
 }
 p {
-	padding: .25em 0;
+	padding: .5em 0;
+	line-height: 1.75em;
 }
 
 .header {
 	width: 100%;
+	padding: .5em 20%;
 	background-color: black;
+	background: url('img/clouds-256.png');
+	background-attachment: fixed;
 	color: white;
-	padding: .1em 20%;
-	margin: 2em 0 .5em;
+	margin: 1em 0 0;
+	font-weight: 300;
+	font-size: 42px;
 }
 
 .quote {
+	width: 100%;
+	padding: 1.5em 20%;
+	background: url('img/clouds-512.png');
+	background-attachment: fixed;
 	font-style: italic;
+	margin-bottom: 2em;
+}
+.quote-indent {
+	margin-left: 50px;
+}
+.attribution {
+	margin: .5em 0 .5em 15em;
+	font-style: normal;
 }
