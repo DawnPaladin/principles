@@ -1,5 +1,28 @@
-#mainColumn {
+body {
+	margin: 0;
+}
+
+.mainColumn > * {
 	width: 60%;
 	margin: auto;
-	font-family: Arial, sans-serif;
+	font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+	padding-bottom: 1em;
+}
+p {
+	padding: .25em 0;
+}
+
+.header {
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: .1em 20%;
+	margin: 2em 0 .5em;
+}
+
+.quote {
+	font-style: italic;
 }
