@@ -1,0 +1,124 @@
+/*
+	CSS Reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: Helvetica, sans-serif;
+}
+	
+
+ol, ul {
+	list-style: none;
+}
+			
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+	q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	Body background
+*/
+
+body{
+	background-color: white;
+	background-image: url("../img/purty_wood.png");
+	background-position: center top;
+	background-repeat: repeat;
+}
+
+/*
+	Back to tutorial
+*/
+
+#back-to-tutorial{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+#back-to-tutorial a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+/*
+	Some basic styling
+*/
+
+h1{
+	font-family: "Mr Dafoe";
+	text-align: center;
+	color: rgba(0,0,0,0.8);
+	font-size: 100px;
+	padding-bottom: 100px;
+	text-shadow: 0 -3px 0 #333,
+		0 3px 4px rgba(0,0,0, 0.4),
+		0 4px 5px rgba(0,0,0, 0.15),
+		0 14px 5px rgba(0,0,0, 0.18),
+		0 6px 5px rgba(0,0,0, 0.21);
+}
+
+h2{
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 34px;
+}
+
+p{
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+
+.holder{
+	width: 600px;
+	margin: 300px auto 100px;
+	position: relative;
+}
