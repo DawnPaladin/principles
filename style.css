@@ -45,3 +45,15 @@ p {
 	background-image: url(img/dawn_1_large.jpg);
 	background-position: bottom;
 }
+
+#groupSelect {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	width: 50%;
+}
+#groupSelect > select {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+}

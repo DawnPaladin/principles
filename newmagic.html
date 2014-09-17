@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Exo+2:100,900,700italic,600,300,800italic,400italic,700,500italic,400,500,900italic,200italic,800,100italic,200,300italic,600italic' rel='stylesheet' type='text/css'> <!-- http://www.google.com/fonts#UsePlace:use/Collection:Exo+2:100,900,700italic,600,300,800italic,400italic,700,500italic,400,500,900italic,200italic,800,100italic,200,300italic,600italic -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> <!-- http://www.google.com/fonts#UsePlace:use/Collection:Oswald:400,300,700 -->
     <script src="jquery-1.11.1.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
@@ -47,12 +48,35 @@
     <p>The human brain is marvelously good at finding patterns. It's one of the few information-processing tasks we're still better at than computers. Our brains are such apt pattern-finders that we often seem to find patterns where none actually exist, and we get emotionally attached to patterns we consider desirable. This is a big root cause of faulty and often hurtful thinking.</p>
 	<p>On some deep, instictual level, humans <em>really</em> want to believe the world makes sense. And not just on a broad scale; everything that happens needs to fit into some meaningful narrative, or we feel that something is wrong. This is where <a href="http://en.wikipedia.org/wiki/Confirmation_bias">confirmation bias</a> comes from, along with <a href="http://en.wikipedia.org/wiki/Victim_blaming">victim blaming</a> and other fallacies.</p>
 	<p>Every person carries a tiny, emotional model of the universe inside their head. This model is a big part of who they are. Because the universe is big and complicated, we tend to simplify our models, and that can get us into trouble.</p>
-	<div>Pick the group you like the least: [Democrats] [Republicans] [Gays] [Cisgenders] [Men] [Women] [The rich] [The poor] [Cats]</div>
+	<div id="groupSelect">Pick the group you like the least: 
+        <select id="hatedGroupPicker" name="hatedGroup"> <!-- Here's a fancier version: http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/ -->
+            <option value="0">Democrats</option>
+            <option value="1">Republicans</option>
+            <option value="2">Gays</option>
+            <option value="3">Cisgenders</option>
+            <option value="4">Men</option>
+            <option value="5">Women</option>
+            <option value="6">The rich</option>
+            <option value="7">The poor</option>
+            <option value="8">Bronies</option>
+        </select>
+        <script>
+            var singular = ['Democrat', 'Republican', 'gay person', 'cisgendered person', 'man', 'woman', 'rich person', 'poor person', 'brony'];
+            var plural = ['Democrats', 'Republicans', 'gay people', 'cisgendered people', 'men', 'women', 'rich people', 'poor people', 'bronies'];
+
+            jQuery('#hatedGroupPicker').change(function(){
+                console.log("Change");
+                var groupIndex = jQuery('#hatedGroupPicker').val();
+                console.log(groupIndex);
+                jQuery('.singular').text(singular[groupIndex]);
+            });
+        </script>
+    </div>
 	<p>Let's say you're watching TV and someone says or does something outrageous. (On TV, this happens a lot.) As part of processing this, you probably consider the source: Is this person a man or woman? Shabby or well-dressed? Democrat or Republican? Gay or straight? You analyze every category this person fits into and then adjust your opinion of those groups based on this person's behavior.</p>
-	<p>But here's the problem: When you adjust your opinion of everyone in group X based on the actions of one person, your mental model of that group is probably not getting closer to reality. They didn't <em>all</em> do that thing; only one of them did. But you're not really viewing them as individual people; you're too far away for that. So you mash what you know about all Democrats into one big Proto-Democrat in your head and ascribe the actions of every Democrat you know to that person.</p>
-	<p>Problem is, Democrats are a big group. They don't all agree with each other; often they work at cross-purposes. So when you mash all their actions together, the result is an incoherent mess. The only way to make sense of the result is to declare that Democrats are crazy.</p>
+	<p>But here's the problem: When you adjust your opinion of every <span class="group singular">_____</span> based on the actions of one person, your mental model of that group is probably not getting closer to reality. They didn't <em>all</em> do that thing; only one of them did. But you're not really viewing them as individual people; you're too far away for that. So you mash what you know about all <span class="group plural">_____</span> into one big Proto-<span class="group singular">_____</span> in your head and ascribe the actions of every <span class="group singular">_____</span> you know to that person.</p>
+	<p>Problem is, <span class="group plural">_____</span> are a big group. They don't all agree with each other; often they work at cross-purposes. So when you mash all their actions together, the result is an incoherent mess. The only way to make sense of the result is to declare that <span class="group plural">_____</span> are crazy.</p>
 	<p>Spoiler alert: They're not crazy. Your mental model is wrong. The members of that group are individuals, not a collective; each of their actions seems quite reasonable from their perspective.</p>
-	<p>So be careful about generalizing people into groups, and especially about any pejoratives you assign to those groups. When you get angry at [group], unless you know the people in that group very well, the thing you are angry at may have only a faint resemblance to the reality.</p>
+	<p>So be careful about generalizing people into groups, and especially about any pejoratives you assign to those groups. When you get angry at <span class="group plural">_____</span>, unless you know the people in that group very well, the thing you are angry at might exist primarily inside your own head.</p>
 	<h3 class="header">Default to Kindness; Practice Love</h3>
 	<p>John 13:34 - "A new command I give you: Love one another. As I have loved you, so you must love one another." This is Jesus' most difficult command. Loving someone when they're being nice to you is easy; true love is loving someone when they drive you nuts. Love is a skill that must be developed like anything else. Look for opportunities to level up your love. A boss fight is coming, and you don't want to be underleveled when that day comes.</p>
 	<p>There will be situations where you simply don't have it in you to be loving to the people around you. If you can't be loving, settle for being kind. Remember that everyone is fighting their own difficult battles, and you know very little about what others' lives are like. Your words have power, so use them responsibly. Criticize constructively or not at all.</p>
