@@ -17,7 +17,6 @@ p {
 }
 
 .header {
-	width: 100%;
 	padding: .5em 20%;
 	background-color: black;
 	background: url('img/clouds-256.png');
@@ -29,7 +28,6 @@ p {
 }
 
 .quote {
-	width: 100%;
 	padding: 1.5em 20%;
 	background: url('img/clouds-512.png');
 	background-attachment: fixed;
