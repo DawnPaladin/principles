@@ -60,4 +60,15 @@ p {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	font-size: 32px;
+	background-color: #CFECF8;
+	border: 3px solid #B2DBED;
+	border-radius: 5px;
+}
+
+.group {
+	background-color: #CFECF8;
+	border: 2px solid #B2DBED;
+	border-radius: 5px;
+	display: inline-block;
+	line-height: 1.35em;
 }
