@@ -33,6 +33,7 @@ p {
 
 .quote {
 	padding: 1.5em 20%;
+	line-height: 1.5em;
 	background: url('img/clouds-512.png');
 	background-attachment: fixed;
 	font-style: italic;
@@ -71,6 +72,9 @@ p {
 	background-color: #CFECF8;
 	border: 3px solid #B2DBED;
 	border-radius: 5px;
+}
+#groupSelect > select:hover {
+	background-color: #DBF5FF;
 }
 
 .group {
