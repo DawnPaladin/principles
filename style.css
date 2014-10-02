@@ -46,6 +46,16 @@ p {
 	margin: .5em 0 .5em 15em;
 	font-style: normal;
 }
+.whisper {
+	float: right;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 1.5em;
+	/*margin-top: 10em;*/
+	color: white;
+	opacity: .1;
+}
+
 
 #quoteSunlight {
 	background: url(img/Faded-sunset.png) -50% top no-repeat fixed #0c0906;
