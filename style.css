@@ -23,26 +23,26 @@ p {
 .header {
 	padding: .5em 20%;
 	background-color: black;
-	background: url('img/clouds-256.png');
-	background-attachment: fixed;
+	background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
+	background-attachment: fixed, scroll;
 	color: white;
 	margin: 1em 0 0;
 	font-weight: 300;
 	font-size: 42px;
 }
 
-.quote {
+blockquote {
 	padding: 1.5em 20%;
 	line-height: 1.5em;
-	background: url('img/clouds-512.png');
-	background-attachment: fixed;
+	background: url('img/clouds-512-50.png');
+	background-attachment: fixed, scroll;
 	font-style: italic;
 	margin-bottom: 2em;
 }
 .quote-indent {
 	margin-left: 50px;
 }
-.attribution {
+cite {
 	margin: .5em 0 .5em 15em;
 	font-style: normal;
 }
@@ -56,17 +56,8 @@ p {
 	opacity: .1;
 }
 
-
 #quoteSunlight {
 	background: url(img/Faded-sunset.png) -50% top no-repeat fixed #0c0906;
-}
-#backgroundTest {
-	/*display: none;*/
-	/*position: absolute;
-	width: 100%;
-	height: 100%;
-	background: url(img/vertical-pixel-stripe.png), url(img/sun.png) center top no-repeat, linear-gradient(to bottom, #cb6735 0%,#fd903b 20%,#fec84a 36%,#fec84a 59%,#fd903b 64%,#cb6735 68%,#a5663b 72%,#270e0a 81%,#0e0906 85%,#0c0d08 100%);*/ /* W3C */
-	/* Sunset gradient: http://www.colorzilla.com/gradient-editor/#cb6735+0,fd903b+20,fec84a+36,fec84a+59,fd903b+64,cb6735+68,a5663b+72,270e0a+81,0e0906+85,0c0d08+100;Custom */
 }
 
 #groupSelect {
