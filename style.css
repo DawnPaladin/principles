@@ -1,20 +1,79 @@
+@media (min-width: 1000px) {
+	.mainColumn > * {
+		width: 50%;
+		margin: auto;
+	}
+	.header, .quote {
+		padding: .5em 25%;
+		width: 100%;
+	}
+}
+@media (max-width: 1000px) and (min-width: 575px) {
+	.mainColumn > * {
+		width: 500px;
+		margin: 0 auto;
+	}
+	.header, .quote {
+		width: 80%;
+		padding: .5em 10% .5em 10%;
+	}
+}
+@media (max-width: 575px) {
+	.mainColumn > * {
+		width: 90%;
+		margin: auto;
+	}
+	.header, .quote {
+		width: 100%;
+		padding: .5em 10%;
+		margin: auto;
+	}
+}
+
 body {
 	margin: 0;
 }
-
-.mainColumn > * {
-	width: 50%;
-	margin: auto;
+.mainColumn {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 1.2em;
 }
+.header {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 1em;
+	background-color: black;
+	background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
+	background-attachment: fixed, scroll;
+	color: white;
+	font-weight: 300;
+	font-size: 42px;
+}
+.quote {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 1em;
+	line-height: 1.8em;
+	background: url('img/clouds-512-50.png');
+	background-attachment: fixed, scroll;
+	font-style: italic;
+}
+.quote-indent {
+	margin-left: 50px;
+}
+cite {
+	display: block;
+	margin: .5em 5em .5em 0;
+	text-align: right;
+	font-style: normal;
+}
+
 #mainLogo {
 	width: 100px;
 	margin-left: -50px;
 	margin-bottom: -40px;
 }
 h1 {
-	font-size: 1.5em !important;
+	font-size: 1.5em;
 	padding: .5em 0;
 }
 p {
@@ -32,43 +91,15 @@ a:visited {
 	color: #9C1D21;
 }
 
-.header {
-	padding: .5em 25%;
-	background-color: black;
-	background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
-	background-attachment: fixed, scroll;
-	color: white;
-	margin: 1em 0 0;
-	font-weight: 300;
-	font-size: 42px;
-}
-
-blockquote {
-	padding: 1.5em 25%;
-	line-height: 1.8em;
-	background: url('img/clouds-512-50.png');
-	background-attachment: fixed, scroll;
-	font-style: italic;
-	margin-bottom: 2em;
-}
-.quote-indent {
-	margin: 0 0 0 50px;
-}
-cite {
-	display: block;
-	margin: .5em 5em .5em 0;
-	text-align: right;
-	font-style: normal;
-}
-.whisper {
+/* .whisper {
 	float: right;
 	font-size: 10px;
 	font-style: normal;
 	line-height: 1.5em;
-	/*margin-top: 10em;*/
+	margin-top: 10em;
 	color: white;
 	opacity: .1;
-}
+} */
 
 #quoteSunlight {
 	background: url(img/Faded-sunset.png) -50% top no-repeat fixed #0c0906;
