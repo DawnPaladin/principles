@@ -102,7 +102,9 @@ a:visited {
 } */
 
 #quoteSunlight {
-	background: url(img/Faded-sunset.png) -50% top no-repeat fixed #0c0906;
+	background-color: #0c0d08;
+	background-image: none;
+	transition: background-color, 1s;
 }
 
 #groupSelect {
