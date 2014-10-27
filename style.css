@@ -104,7 +104,11 @@ a:visited {
 #quoteSunlight {
 	background-color: #0c0d08;
 	background-image: none;
-	transition: background-color, 1s;
+}
+#quoteSunlight > img {
+	margin-left: -250px;
+	margin-top: -85px;
+	position: absolute;
 }
 
 #groupSelect {
