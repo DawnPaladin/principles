@@ -108,12 +108,12 @@
 	<p>Seek out and expose every lie that's taken root in your life. Think carefully about the things that others tell you are true, and be especially careful about the things you tell yourself. Be wary of easy answers. Reexamine conclusions that favor you and yours. Think about the side of the story you're not being told.</p>
 	<p>The most harmful lies are the ones we tell ourselves. We use these lies to make ourselves more comfortable. Lies like "it's hopeless; there's no point in doing anything," or "[those people I don't get along with] are [stupid/crazy/evil]", or "[thing I did/might do] is OK because [justification]." Telling ourselves these things is much simpler and less painful than grappling with the real world in all its nasty complexity, so we just make up something that seems to make sense and move on. But living inside a ball of comfy lies is a small, miserable existence. If you want a powerful, joyful life you can be proud of, learn to operate on a truth-only basis, even when it hurts to do so.</p>
 	
-	<h3 class="header">4. Embrace Complexity</h3>
-	<blockquote class="quote" id="quoteSunlight">
+	<h3 class="header quoteSunlight">4. Embrace Complexity</h3>
+	<blockquote class="quote quoteSunlight">
 	   <!-- This world spins faster than you know
 			And I'd give anything to show what I'm fighting for
 		-->
-		<img src="img/sun.png">
+		<img id="celestia" src="img/sun.png">
 		Sunlight is the best disinfectant.
 		<cite>&mdash;Louis Brandeis</cite>
 	</blockquote>
@@ -122,9 +122,9 @@
 	sunrise.setSpectrum('#9eaccf', '#dcd3d8', '#f6dfcd', '#ffd193', '#fead51', '#fe8043');
 
 	jQuery(window).scroll(function(){
-		var sunlightQuote = jQuery('#quoteSunlight');
+		var sunlightQuote = jQuery('.quoteSunlight');
 		var windowHeight = jQuery(window).height();
-		var quotePageOffset = sunlightQuote.offset().top;
+		var quotePageOffset = $('h3.quoteSunlight').offset().top;
 		var screenPosition = quotePageOffset - $(window).scrollTop();
 		var quoteWindowOffset = Math.round(screenPosition / windowHeight * 100);
 		sunlightQuote.css('background-color', "#" + sunrise.colourAt(quoteWindowOffset));

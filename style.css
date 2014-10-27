@@ -101,13 +101,13 @@ a:visited {
 	opacity: .1;
 } */
 
-#quoteSunlight {
+.quoteSunlight {
 	background-color: #0c0d08;
 	background-image: none;
 }
-#quoteSunlight > img {
+#celestia {
 	margin-left: -250px;
-	margin-top: -85px;
+	margin-top: -132px;
 	position: absolute;
 }
 
