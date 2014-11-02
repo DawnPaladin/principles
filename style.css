@@ -37,36 +37,6 @@ body {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 1.2em;
 }
-.header {
-	box-sizing: border-box;
-	width: 100%;
-	margin-top: 1em;
-	background-color: black;
-	background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
-	background-attachment: fixed, scroll;
-	color: white;
-	font-weight: 300;
-	font-size: 42px;
-}
-.quote {
-	box-sizing: border-box;
-	width: 100%;
-	margin-bottom: 1em;
-	line-height: 1.8em;
-	background: url('img/clouds-512-50.png');
-	background-attachment: fixed, scroll;
-	font-style: italic;
-}
-.quote-indent {
-	margin-left: 50px;
-}
-cite {
-	display: block;
-	margin: .5em 5em .5em 0;
-	text-align: right;
-	font-style: normal;
-}
-
 #mainLogo {
 	width: 100px;
 	margin-left: -50px;
@@ -101,17 +71,42 @@ a:visited {
 	opacity: .1;
 } */
 
-.quoteSunlight {
-	background-color: #0c0d08;
-	background-image: none;
-	color: #404040;
+.sectionHead {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 1em 0 0 0;
 }
-#celestia {
-	margin-left: -200px;
-	margin-top: -97px;
-	position: absolute;
+.header {
+	color: white;
+	font-weight: 300;
+	font-size: 42px;
+	margin: 0;
 }
-.quoteRoddenberry {
+.quote {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0 1em 0;
+	line-height: 1.8em;
+	font-style: italic;
+}
+.quote-indent {
+	margin-left: 50px;
+}
+cite {
+	display: block;
+	margin: .5em 5em .5em 0;
+	text-align: right;
+	font-style: normal;
+}
+.fog > h3 {
+	background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
+	background-attachment: fixed, scroll;
+}
+.fog > blockquote {
+	background: url('img/clouds-512-50.png');
+	background-attachment: fixed, scroll;
+}
+.Roddenberry > * {
 	background-image: url('img/notebook.png');
 	background-attachment: scroll;
 	color: #404040;
@@ -121,12 +116,14 @@ a:visited {
 	margin-top: -97px;
 	position: absolute;
 }
-.IncrediblesQuote {
+.Incredibles > blockquote {
 	background-image: none;
 	background-color: #151515;
 	color: white;
 }
-.header.IncrediblesQuote {
+.Incredibles > h3 {
+	background-image: none;
+	background-color: #151515;
 	color: #fddb22;
 }
 #Incredibles {
@@ -134,10 +131,18 @@ a:visited {
 	margin-top: -58px;
 	position: absolute;
 }
-.climberQuote {
+.climber {
 	background-image: url('img/climber.png');
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+}
+.sunlight > * {
+	color: #404040;
+}
+#Celestia {
+	margin-left: -200px;
+	margin-top: -97px;
+	position: absolute;
 }
 
 #groupSelect {
