@@ -111,6 +111,16 @@ a:visited {
 	margin-top: -97px;
 	position: absolute;
 }
+.quoteRoddenberry {
+	background-image: url('img/notebook.png');
+	background-attachment: scroll;
+	color: #404040;
+}
+#Roddenberry {
+	margin-left: -200px;
+	margin-top: -97px;
+	position: absolute;
+}
 
 #groupSelect {
 	font-family: 'Oswald', sans-serif;
