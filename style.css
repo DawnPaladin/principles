@@ -121,10 +121,23 @@ a:visited {
 	margin-top: -97px;
 	position: absolute;
 }
+.IncrediblesQuote {
+	background-image: none;
+	background-color: #151515;
+	color: white;
+}
+.header.IncrediblesQuote {
+	color: #fddb22;
+}
 #Incredibles {
 	margin-left: -250px;
 	margin-top: -58px;
 	position: absolute;
+}
+.climberQuote {
+	background-image: url('img/climber.png');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
 }
 
 #groupSelect {
