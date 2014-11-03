@@ -175,3 +175,8 @@ cite {
 	display: inline-block;
 	line-height: 1.35em;
 }
+
+.flourish {
+	margin: 21px auto;
+	width: 61px;
+}
