@@ -14,8 +14,7 @@
 		margin: 0 auto;
 	}
 	.header, .quote {
-		width: 80%;
-		padding: .5em 10% .5em 10%;
+		padding: .5em 10% .5em 25%;
 	}
 }
 @media (max-width: 575px) {
@@ -27,6 +26,9 @@
 		width: 100%;
 		padding: .5em 10%;
 		margin: auto;
+	}
+	h3 > img {
+		display: none;
 	}
 }
 
@@ -77,6 +79,7 @@ a:visited {
 	margin: 1em 0 0 0;
 }
 .header {
+	box-sizing: border-box;
 	color: white;
 	font-weight: 300;
 	font-size: 42px;
@@ -113,28 +116,29 @@ cite {
 }
 #Roddenberry {
 	margin-left: -200px;
-	margin-top: -97px;
 	position: absolute;
 }
+.Incredibles {
+	background-image: url('img/micro_carbon.png');
+}
 .Incredibles > blockquote {
-	background-image: none;
-	background-color: #151515;
 	color: white;
 }
 .Incredibles > h3 {
-	background-image: none;
-	background-color: #151515;
 	color: #fddb22;
 }
 #Incredibles {
 	margin-left: -250px;
-	margin-top: -58px;
+	margin-top: 15px;
 	position: absolute;
 }
 .climber {
 	background-image: url('img/climber.png');
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
+}
+.climber > h3 {
+	color: #404040;
 }
 .sunlight > * {
 	color: #404040;
