@@ -23,7 +23,10 @@
 		font-size: 42px;
 	}
 	.header, .quote {
-		padding: .5em 10% .5em 25%;
+		padding: .5em 5% .5em 250px;
+	}
+	div.noImage > .header, div.noImage > .quote {
+		padding: .5em 10%;
 	}
 	cite {
 		margin: .5em 0em .5em 0;
@@ -38,7 +41,7 @@
 		background: url('img/clouds-512-50.png');
 		background-attachment: fixed, scroll;
 	}
-	.Roddenberry > * {
+	div.Roddenberry > * {
 		background-image: url('img/notebook.png');
 		background-attachment: scroll;
 		color: #404040;
@@ -57,7 +60,7 @@
 		color: #fddb22;
 	}
 	#Incredibles {
-		margin-left: -250px;
+		margin-left: -235px;
 		margin-top: 15px;
 		position: absolute;
 	}
