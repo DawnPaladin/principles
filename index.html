@@ -137,7 +137,11 @@
 			var quotePageOffset = $('.sunlight > h3').offset().top;
 			var screenPosition = quotePageOffset - $(window).scrollTop();
 			var quoteWindowOffset = Math.round(screenPosition / windowHeight * 100);
-			sunlightQuote.css('background-color', "#" + sunrise.colourAt(quoteWindowOffset));
+			if ($(window).width() > 575) {
+				sunlightQuote.css('background-color', "#" + sunrise.colourAt(quoteWindowOffset));
+			} else {
+				sunlightQuote.css('background-color', 'white');
+			}
 		});
 		</script>
 	</div>

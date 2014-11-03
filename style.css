@@ -3,9 +3,15 @@
 		width: 50%;
 		margin: auto;
 	}
+	.header {
+		font-size: 2.25em;
+	}
 	.header, .quote {
 		padding: .5em 25%;
 		width: 100%;
+	}
+	cite {
+		margin: .5em 5em .5em 0;
 	}
 }
 @media (max-width: 1000px) and (min-width: 575px) {
@@ -13,8 +19,67 @@
 		width: 500px;
 		margin: 0 auto;
 	}
+	.header {
+		font-size: 42px;
+	}
 	.header, .quote {
 		padding: .5em 10% .5em 25%;
+	}
+	cite {
+		margin: .5em 0em .5em 0;
+	}
+}
+@media (min-width: 576px) {
+	.fog > h3 {
+		background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
+		background-attachment: fixed, scroll;
+	}
+	.fog > blockquote {
+		background: url('img/clouds-512-50.png');
+		background-attachment: fixed, scroll;
+	}
+	.Roddenberry > * {
+		background-image: url('img/notebook.png');
+		background-attachment: scroll;
+		color: #404040;
+	}
+	#Roddenberry {
+		margin-left: -200px;
+		position: absolute;
+	}
+	.Incredibles {
+		background-image: url('img/micro_carbon.png');
+	}
+	.Incredibles > blockquote {
+		color: white;
+	}
+	.Incredibles > h3 {
+		color: #fddb22;
+	}
+	#Incredibles {
+		margin-left: -250px;
+		margin-top: 15px;
+		position: absolute;
+	}
+	.climber {
+		background-image: url('img/climber.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.climber > h3 {
+		color: #404040;
+	}
+	.sunlight > * {
+		color: #404040;
+	}
+	#Celestia {
+		margin-left: -200px;
+		margin-top: -97px;
+		position: absolute;
+	}
+	#groupSelect {
+		margin: 1em 25%;
+		width: 50%;
 	}
 }
 @media (max-width: 575px) {
@@ -22,13 +87,39 @@
 		width: 90%;
 		margin: auto;
 	}
+	.header {
+		font-size: 42px;
+	}
 	.header, .quote {
 		width: 100%;
-		padding: .5em 10%;
+		padding: .5em 5%;
 		margin: auto;
 	}
-	h3 > img {
+	h3 > img, blockquote > img {
 		display: none;
+	}
+	body {
+		font-size: .8em;
+	}
+	img#mainLogo {
+		margin-left: 0;
+		margin-bottom: -0.5em;
+		width: 50px;
+	}
+	cite {
+		margin: .5em 0em .5em 0;
+	}
+	.header {
+		background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
+		background-attachment: fixed, scroll;
+	}
+	.quote {
+		background: url('img/clouds-512-50.png');
+		background-attachment: fixed, scroll;
+	}
+	#groupSelect {
+		margin: 1em 10%;
+		width: 80%;
 	}
 }
 
@@ -82,7 +173,6 @@ a:visited {
 	box-sizing: border-box;
 	color: white;
 	font-weight: 300;
-	font-size: 42px;
 	margin: 0;
 }
 .quote {
@@ -97,64 +187,14 @@ a:visited {
 }
 cite {
 	display: block;
-	margin: .5em 5em .5em 0;
 	text-align: right;
 	font-style: normal;
-}
-.fog > h3 {
-	background: url('img/clouds-256-50.png'), url('img/clouds-256-50.png');
-	background-attachment: fixed, scroll;
-}
-.fog > blockquote {
-	background: url('img/clouds-512-50.png');
-	background-attachment: fixed, scroll;
-}
-.Roddenberry > * {
-	background-image: url('img/notebook.png');
-	background-attachment: scroll;
-	color: #404040;
-}
-#Roddenberry {
-	margin-left: -200px;
-	position: absolute;
-}
-.Incredibles {
-	background-image: url('img/micro_carbon.png');
-}
-.Incredibles > blockquote {
-	color: white;
-}
-.Incredibles > h3 {
-	color: #fddb22;
-}
-#Incredibles {
-	margin-left: -250px;
-	margin-top: 15px;
-	position: absolute;
-}
-.climber {
-	background-image: url('img/climber.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-.climber > h3 {
-	color: #404040;
-}
-.sunlight > * {
-	color: #404040;
-}
-#Celestia {
-	margin-left: -200px;
-	margin-top: -97px;
-	position: absolute;
 }
 
 #groupSelect {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	font-size: 32px;
-	width: 50%;
-	margin: 1em 25%;
 }
 #groupSelect > select {
 	font-family: 'Oswald', sans-serif;
