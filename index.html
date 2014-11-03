@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,300italic,300,400,700italic,400italic|Oswald:400,300' rel='stylesheet' type='text/css'> <!-- http://www.google.com/fonts#UsePlace:use/Collection:Exo+2:700,300italic,300,400,700italic,400italic|Oswald:400,300 -->
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,300italic,300,400,700italic,400italic%7COswald:400,300' rel='stylesheet' type='text/css'> <!-- http://www.google.com/fonts#UsePlace:use/Collection:Exo+2:700,300italic,300,400,700italic,400italic|Oswald:400,300 -->
 	<script src="jquery-1.11.1.js"></script>
 	<script src="rainbowvis.js"></script>
 	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -123,7 +123,7 @@
 				And I'd give anything to show what I'm fighting for
 				http://blackgryph0n.bandcamp.com/track/faster-than-you-know-2
 			-->
-			<img id="Celestia" src="img/sun.png">
+			<img id="Celestia" src="img/sun.png" alt="">
 			Sunlight is the best disinfectant.
 			<cite>&mdash;Louis Brandeis</cite>
 		</blockquote>
@@ -146,7 +146,7 @@
 	<p>Every person carries a tiny, emotional model of the universe inside their head. This model of the way things work heavily influences who they are as a person. Because the universe is big and complicated, we tend to simplify our models, and that can get us into trouble.</p>
 	<div id="groupSelect">Pick the group you like the least:
 		<select id="hatedGroupPicker" name="hatedGroup"> <!-- Here's a fancier version: http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/ -->
-			<option value="0"></option>
+			<option value="0">&nbsp;</option>
 			<option value="1">Democrats</option>
 			<option value="2">Republicans</option>
 			<option value="3">Gays</option>
@@ -171,7 +171,7 @@
 			var groupIndex = jQuery('#hatedGroupPicker').val();
 			jQuery('.singular').html(singular[groupIndex]);
 			jQuery('.plural').html(plural[groupIndex]);
-			if (groupIndex === 0) {
+			if (groupIndex == "0") {
 				jQuery('.group').width(50);
 			}
 		});
@@ -200,9 +200,7 @@
 
 	<p>Loving someone when they're being nice to you is easy; true love is loving someone when they drive you nuts. Love is a skill that must be developed like anything else. Look for opportunities to level up your love. A boss fight is coming, and you don't want to be underleveled when that day comes.</p>
 	<p>There will be situations where you simply don't have it in you to be loving to the people around you. If you can't be loving, try to at least be kind. You know very little about what others' lives are like. Your words have power, so use them responsibly. Criticize constructively or not at all.</p>
-	<div class="flourish">
-		<img src="img/flourish.png">
-	</div>
+	<img src="img/flourish.png" class="flourish" alt="">
 	<p>This is our everyday epic: The good within us against the evil, living victoriously one skill point at a time. The choice is yours: Will you be a protagonist or a background character?</p>
 </div>
 </body>
